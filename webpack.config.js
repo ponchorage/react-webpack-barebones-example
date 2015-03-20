@@ -35,8 +35,8 @@ module.exports = {
     module: {
         /* Loaders are how webpack compiles and builds the JSX extensions */
         loaders: [
-            /* Any file with a .jsx extension will go through the jsx-loader */
-            { test: /\.jsx$/, loader: "jsx-loader?harmony" }
+            /* Any file with a .js extension will go through the babel-loader */
+            {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/}
         ]
     }
 };
